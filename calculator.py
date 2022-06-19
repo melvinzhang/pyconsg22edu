@@ -40,7 +40,7 @@ calc <= (html.TR(html.TD(x) for x in line) for line in lines)
 </table>
 """
 
-document <= calc
+document["calc"] <= calc
 
 result = document["result"]
 
